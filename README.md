@@ -25,7 +25,6 @@ By default the mod supports Munitions, the Munitions Ammo Addon and Caliber Comp
 The default ammo damage balance is based on my Unleveled Commonwealth mod (check the suggested mods section below), but SCOURGE or Hardcore Health Overhaul will still be better than vanilla. 
 
 ## Pros Compared To True Damage
-Doing things while the game is running introduces some hurdles and restrictions (mostly on data crunching), so while True Damage is a good mod, it has its restrictions and a vital bug [shown here](https://youtu.be/re3UGfGrUK8?si=GTQi6WXRk0hOwDcR&t=607), which can be annoying. The pros this mod offers are as follows:
 
 - The damage modifier attachment options many mods offer keep working as they were intended to.
 - Ammo type modifications like "hollow points" and "armor piercing" ammo types function as intended, making using ammo types that increase your damage wortwhile instead of just pumping armor piercing.
@@ -52,14 +51,29 @@ The mods I know that do things like this are the Battlefield 4 .44 Magnum (has a
 The mod **requires the [Spell Perk Item Distributor (SPID) mod for Fallout 4](https://www.nexusmods.com/fallout4/mods/48365)** to make the weapon range, armor piercing, etc changes apply to NPCs as well (they're applied via a hidden perk). If you don't care about that you don't actually need to install it, it will still work for the player and the main damage and ammo changes work for everyone regardless.
 
 ## Suggested Mods
-- **[Caliber Complex](https://www.nexusmods.com/fallout4/mods/50111?):** I think it's the best ammo mod due to the fact it has real ballistics. Suggested along with its **[Cover Penetration Framework](https://www.nexusmods.com/fallout4/mods/55959)** patch.
-  
-- **[Unused Ammo Remover](https://github.com/ReaperAnon/UnusedAmmoRemover):** If you don't like Caliber Complex because it spams your game with ammo, just use my Unused Ammo Remover mod which is another Synthesis patcher. It removes all ammo that is unused in your game both from the leveled list and also from crafting (if you have an ammo crafting mod installed).
+
+# Ammunitions Frameworks
+- **[Munitions - Ammo Expansion Project](https://www.nexusmods.com/fallout4/mods/66051):** For me, it's the best framework and the modern standard for expanding caliber variety in Fallout 4. The patcher includes support for it's addons **[Munitions - Additional Ammo](https://www.nexusmods.com/fallout4/mods/69583)** and **[Munitions - Advanced Calibers](https://www.nexusmods.com/fallout4/mods/81931)**.
+
+- **[Caliber Complex](https://www.nexusmods.com/fallout4/mods/50111?):** It's a good alternative, have lots of ammunitions to use from, but in my opinion it was superseded by **Munitions**. If you are going to use it, it's suggested to use along with its **[Cover Penetration Framework](https://www.nexusmods.com/fallout4/mods/55959)** patch.
+
+ # Utilities/Bugfixes 
+- **[Unused Ammo Remover](https://github.com/ReaperAnon/UnusedAmmoRemover):** If you don't like Caliber Complex because it spams your game with ammo, use the Unused Ammo Remover mod which is another Synthesis patcher. It removes all ammo that is unused in your game both from the leveled list and also from crafting (if you have an ammo crafting mod installed).
 
 - **[Armor Penetration Fix](https://www.nexusmods.com/fallout4/mods/73849):** By default the ammo penetration effect is broken in Fallout 4, so it's suggested you download this as you're probably using some mods along with this that make use of the effect.
-  
+
+# NPC Balancing
+
+- **[SCOURGE](https://www.nexusmods.com/fallout4/mods/60917)**: SCOURGE works by randomising NPC stats using a normal/Gaussian distribution curve. Whenever a new NPC spawns it will have its stats randomised based on the values configured through the MCM. This results in all NPCs being different the way everyone is different in real life.
+
 - **[Unleveled Commonwealth](https://github.com/ReaperAnon/Unleveled-Commonwealth):** Without some mod to rebalance enemies, weapons will be overpowered in the early game and weak in the late-game. I suggest using my Unleveled Commonwealth mod which is another Synthesis patcher, similar to how SCOURGE works but more compatible and retains relative enemy balancing instead of randomizing NPC stats. Also doesn't require any other mods to function.
+
+- **[Hardcore Health Overhaul](https://www.nexusmods.com/fallout4/mods/68655)**: This mod removes Fallout 4’s excessive bullet sponges by giving all enemies and the player realistic, fixed health and resistance values. Humans range from 100–250 HP, big creatures scale much higher, and robots rely on armor rather than huge health. Critical hits matter more, auto-healing is essentially disabled, melee damage is rebalanced, and major creatures like Deathclaws and Super Mutants are made faster and deadlier.
 
 ## Credits
 
-### Mutagen
+### [Mutagen](https://github.com/Mutagen-Modding/Synthesis) - for Synthesis.
+
+### [ReaperAnon](https://github.com/ReaperAnon) - for the original patcher.
+
+
