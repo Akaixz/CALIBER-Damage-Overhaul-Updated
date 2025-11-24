@@ -973,7 +973,7 @@
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "009001:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "000001:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 140.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
