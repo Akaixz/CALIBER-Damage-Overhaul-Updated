@@ -937,187 +937,319 @@
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000800:Munitions-Additional Ammo.esp",
+      "AmmoLink": "00A800:Munitions-Additional Ammo.esp",
       "AmmoDamage": 20.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000801:Munitions-Additional Ammo.esp",
-      "AmmoDamage": 20.0,
+      "AmmoLink": "00A801:Munitions-Additional Ammo.esp",
+      "AmmoDamage": 25.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000802:Munitions-Additional Ammo.esp",
+      "AmmoLink": "00A802:Munitions-Additional Ammo.esp",
       "AmmoDamage": 41.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000815:Munitions-Additional Ammo.esp",
+      "AmmoLink": "00A815:Munitions-Additional Ammo.esp",
       "AmmoDamage": 70.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000816:Munitions-Additional Ammo.esp",
+      "AmmoLink": "00A816:Munitions-Additional Ammo.esp",
       "AmmoDamage": 35.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000817:Munitions-Additional Ammo.esp",
-      "AmmoDamage": 39.0,
+      "AmmoLink": "00A817:Munitions-Additional Ammo.esp",
+      "AmmoDamage": 48.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0006C8:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 10.0,
+      "AmmoLink": "009001:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 140.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0006C9:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 13.0,
+      "AmmoLink": "009005:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 160.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0006CA:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 21.0,
+      "AmmoLink": "00901C:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 75.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0006CB:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 34.0,
+      "AmmoLink": "009022:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 41.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0006CC:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 90.0,
+      "AmmoLink": "009029:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 46.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0006D6:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 34.0,
+      "AmmoLink": "009030:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 36.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0006D7:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 45.0,
-      "TargetToKill": "Null",
-      "ShotsToKill": 0
-    },
-    {
-      "AmmoLink": "0006D8:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 37.0,
-      "TargetToKill": "Null",
-      "ShotsToKill": 0
-    },
-    {
-      "AmmoLink": "0006E2:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 43.0,
-      "TargetToKill": "Null",
-      "ShotsToKill": 0
-    },
-    {
-      "AmmoLink": "0006E3:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 50.0,
-      "TargetToKill": "Null",
-      "ShotsToKill": 0
-    },
-    {
-      "AmmoLink": "0006E4:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 200.0,
-      "TargetToKill": "Null",
-      "ShotsToKill": 0
-    },
-    {
-      "AmmoLink": "0006EE:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 25.0,
-      "TargetToKill": "Null",
-      "ShotsToKill": 0
-    },
-    {
-      "AmmoLink": "000716:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "009058:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 20.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000717:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 32.0,
+      "AmmoLink": "009061:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 40.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000796:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 90.0,
+      "AmmoLink": "00906D:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 20.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0007A1:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "009075:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 20.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0090BB:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 77.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0096C8:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 5.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0096C9:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 10.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0096CA:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 21.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0096CB:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 34.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0096CC:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 60.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0096D6:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 34.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0096D7:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 45.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "0007A2:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 32.0,
+      "AmmoLink": "0096D8:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 37.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000FAA:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 31.0,
+      "AmmoLink": "0096E2:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 43.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000FAC:Munitions - An Ammo Expansion.esl",
-      "AmmoDamage": 100.0,
-      "TargetToKill": "Null",
-      "ShotsToKill": 0
-    },
-    {
-      "AmmoLink": "000FAE:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "0096E3:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 50.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000FAF:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "0096E4:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 200.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0096EE:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 25.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000FB0:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "009716:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 20.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009717:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 22.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009796:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 90.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0097A1:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 22.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0097A2:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 32.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0097EE:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 10.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0097EF:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 150.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0097F0:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 30.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0097F3:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 95.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0097F4:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 40.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009812:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 16.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FA8:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 90.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FAA:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 31.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FAC:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 100.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FAE:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 50.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FAF:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 25.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FB0:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 18.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000FB1:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "009FB1:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 18.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000FB2:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "009FB2:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 45.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
     },
     {
-      "AmmoLink": "000FCA:Munitions - An Ammo Expansion.esl",
+      "AmmoLink": "009FC6:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 110.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FC7:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 125.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FC8:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 250.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FCA:Munitions - An Ammo Expansion.esl",
+      "AmmoDamage": 45.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "009FD3:Munitions - An Ammo Expansion.esl",
       "AmmoDamage": 45.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
