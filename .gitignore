@@ -356,5 +356,6 @@ MigrationBackup/
 docs/
 helper/
 test/
+.vscode/
 
 # MyIgnore files
