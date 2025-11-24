@@ -1253,6 +1253,114 @@
       "AmmoDamage": 45.0,
       "TargetToKill": "Null",
       "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005001:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 32.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005002:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 25.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005006:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 38.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "00500C:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 42.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "00500D:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 50.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005010:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 53.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005013:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 50.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005016:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 36.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005019:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 52.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005022:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 33.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005025:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 75.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005028:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 75.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "00502B:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 38.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "00502E:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 23.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "005031:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 85.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0050AE:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 53.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0050C4:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 50.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
+    },
+    {
+      "AmmoLink": "0050CE:Munitions - Advanced Calibers.esp",
+      "AmmoDamage": 57.0,
+      "TargetToKill": "Null",
+      "ShotsToKill": 0
     }
   ]
 }
