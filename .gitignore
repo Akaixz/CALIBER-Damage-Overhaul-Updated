@@ -354,5 +354,7 @@ MigrationBackup/
 
 # Project specific ignores
 docs/
+helper/
+test/
 
 # MyIgnore files
