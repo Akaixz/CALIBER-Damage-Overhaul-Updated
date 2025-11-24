@@ -66,7 +66,8 @@ namespace CALIBERDamageOverhaul
 
         public static void CreatePerks(IPatcherState<IFallout4Mod, IFallout4ModGetter> state)
         {
-            WeaponPerk = new Perk(state.PatchMod, $"CALIBER_WeaponModificationPerk") {
+            WeaponPerk = new Perk(state.PatchMod, $"CALIBER_WeaponModificationPerk")
+            {
                 FormVersion = 131,
                 NumRanks = 1,
                 Hidden = true
@@ -75,14 +76,17 @@ namespace CALIBERDamageOverhaul
             state.PatchMod.Perks.Add(WeaponPerk);
             for (int i = 0; i < NumOptions; i++)
             {
-                PerkCondition condSet = new() {
+                PerkCondition condSet = new()
+                {
                     RunOnTabIndex = 1
                 };
 
-                ConditionFloat weaponTypeCond = new() {
+                ConditionFloat weaponTypeCond = new()
+                {
                     CompareOperator = CompareOperator.EqualTo,
                     ComparisonValue = 1,
-                    Data = new FunctionConditionData() {
+                    Data = new FunctionConditionData()
+                    {
                         Function = Condition.Function.HasKeyword,
                         RunOnType = Condition.RunOnType.Subject,
                         ParameterOneRecord = i == 0 ? Fallout4.Keyword.WeaponTypePistol :
@@ -94,10 +98,12 @@ namespace CALIBERDamageOverhaul
                     }
                 };
 
-                ConditionFloat ballisticCond = new() {
+                ConditionFloat ballisticCond = new()
+                {
                     CompareOperator = CompareOperator.EqualTo,
                     ComparisonValue = 1,
-                    Data = new FunctionConditionData() {
+                    Data = new FunctionConditionData()
+                    {
                         Function = Condition.Function.HasKeyword,
                         RunOnType = Condition.RunOnType.Subject,
                         ParameterOneRecord = Fallout4.Keyword.WeaponTypeBallistic
@@ -108,7 +114,8 @@ namespace CALIBERDamageOverhaul
                 if (i < 5)
                     condSet.Conditions.Add(ballisticCond);
 
-                PerkEntryPointModifyValue accuracyEffect = new() {
+                PerkEntryPointModifyValue accuracyEffect = new()
+                {
                     PerkConditionTabCount = 2,
                     Conditions = new ExtendedList<PerkCondition>() { condSet },
                     EntryPoint = APerkEntryPointEffect.EntryType.ModConeoffireMult,
@@ -121,7 +128,8 @@ namespace CALIBERDamageOverhaul
                                 Settings.EnergyWeapons.AccuracyMult) - 1)
                 };
 
-                PerkEntryPointModifyValue damageEffect = new() {
+                PerkEntryPointModifyValue damageEffect = new()
+                {
                     PerkConditionTabCount = 2,
                     Conditions = new ExtendedList<PerkCondition>() { condSet },
                     EntryPoint = APerkEntryPointEffect.EntryType.ModWeaponAttackDamage,
@@ -134,7 +142,8 @@ namespace CALIBERDamageOverhaul
                                 Settings.EnergyWeapons.DamageMult
                 };
 
-                PerkEntryPointModifyValue rangeEffect = new() {
+                PerkEntryPointModifyValue rangeEffect = new()
+                {
                     PerkConditionTabCount = 2,
                     Conditions = new ExtendedList<PerkCondition>() { condSet },
                     EntryPoint = APerkEntryPointEffect.EntryType.ModGunRangeMult,
@@ -147,7 +156,8 @@ namespace CALIBERDamageOverhaul
                                 Settings.EnergyWeapons.RangeMult
                 };
 
-                PerkEntryPointModifyValue piercingEffect = new() {
+                PerkEntryPointModifyValue piercingEffect = new()
+                {
                     PerkConditionTabCount = 2,
                     Conditions = new ExtendedList<PerkCondition>() { condSet },
                     EntryPoint = APerkEntryPointEffect.EntryType.ModTargetDamageResistance,
@@ -157,7 +167,7 @@ namespace CALIBERDamageOverhaul
                                     i == 2 ? Settings.BallisticShotguns.ArmorPen :
                                     i == 3 ? Settings.BallisticSnipers.ArmorPen :
                                     i == 4 ? Settings.BallisticHeavyWeapons.ArmorPen :
-                                    Settings.EnergyWeapons.ArmorPen) - 1) 
+                                    Settings.EnergyWeapons.ArmorPen) - 1)
                 };
 
                 WeaponPerk.Effects.Add(accuracyEffect);
@@ -170,7 +180,8 @@ namespace CALIBERDamageOverhaul
         public static void AddPerks(IPatcherState<IFallout4Mod, IFallout4ModGetter> state)
         {
             // Player
-            var perkSpell = new Spell(state.PatchMod, "CALIBER_AddPlayerPerkSpell") {
+            var perkSpell = new Spell(state.PatchMod, "CALIBER_AddPlayerPerkSpell")
+            {
                 FormVersion = 131,
                 Type = SpellType.Ability,
                 TargetType = TargetType.Self,
@@ -178,7 +189,8 @@ namespace CALIBERDamageOverhaul
             };
 
             state.PatchMod.Spells.Add(perkSpell);
-            var perkMGEF = new MagicEffect(state.PatchMod, $"{WeaponPerk.EditorID}MGEF") {
+            var perkMGEF = new MagicEffect(state.PatchMod, $"{WeaponPerk.EditorID}MGEF")
+            {
                 FormVersion = 131,
                 Flags = MagicEffect.Flag.Recover,
                 PerkToApply = WeaponPerk.ToLink(),
@@ -186,7 +198,8 @@ namespace CALIBERDamageOverhaul
             };
 
             state.PatchMod.MagicEffects.Add(perkMGEF);
-            perkSpell.Effects.Add(new Effect {
+            perkSpell.Effects.Add(new Effect
+            {
                 BaseEffect = perkMGEF.ToNullableLink(),
                 Data = new EffectData()
             });
@@ -194,7 +207,8 @@ namespace CALIBERDamageOverhaul
             var perkQuest = new Quest(state.PatchMod, "CALIBER_AddPlayerPerkQuest")
             {
                 FormVersion = 131,
-                Data = new QuestData {
+                Data = new QuestData
+                {
                     Flags = Quest.Flag.StartGameEnabled | Quest.Flag.RunOnce
                 },
                 Aliases = new ExtendedList<AQuestAlias> {
@@ -232,32 +246,40 @@ namespace CALIBERDamageOverhaul
 
             var dmgIdx = new List<int>();
             var words = modDesc.Trim().Split(' ', StringSplitOptions.TrimEntries).ToList();
-            for (int i = 0; i < words.Count; i++) { // save all indexes of the word "damage"
+            for (int i = 0; i < words.Count; i++)
+            { // save all indexes of the word "damage"
                 if (words[i].Contains("damage", StringComparison.OrdinalIgnoreCase))
                     dmgIdx.Add(i);
             }
 
-            for (int i = dmgIdx.Count - 1; i >= 0; i--) { // delete all the ones that have forbidden words reasonably behind them
+            for (int i = dmgIdx.Count - 1; i >= 0; i--)
+            { // delete all the ones that have forbidden words reasonably behind them
                 if (dmgIdx[i] - 1 > 0 && !words[dmgIdx[i] - 1].Contains('.') && ForbiddenWords.Any(str => words[dmgIdx[i] - 1].Contains(str, StringComparison.OrdinalIgnoreCase)))
                     dmgIdx.RemoveAt(i);
                 else if (dmgIdx[i] - 2 > 0 && !words[dmgIdx[i] - 2].Contains('.') && ForbiddenWords.Any(str => words[dmgIdx[i] - 2].Contains(str, StringComparison.OrdinalIgnoreCase)))
                     dmgIdx.RemoveAt(i);
             }
 
-            if (deleteEntry) {
+            if (deleteEntry)
+            {
                 // find first period before damage word and first period after, then delete the entire span
-                for (int i = dmgIdx.Count - 1; i >= 0; i--) {
+                for (int i = dmgIdx.Count - 1; i >= 0; i--)
+                {
                     int sentenceBegin = 0;
                     int sentenceEnd = words.Count - 1;
-                    for (int j = dmgIdx[i] - 1; j >= 0; j--) { // find begin
-                        if (words[j].Contains('.')) {
+                    for (int j = dmgIdx[i] - 1; j >= 0; j--)
+                    { // find begin
+                        if (words[j].Contains('.'))
+                        {
                             sentenceBegin = j + 1;
                             break;
                         }
                     }
 
-                    for (int j = dmgIdx[i]; j < words.Count; j++) { // find end
-                        if (words[j].Contains('.')) {
+                    for (int j = dmgIdx[i]; j < words.Count; j++)
+                    { // find end
+                        if (words[j].Contains('.'))
+                        {
                             sentenceEnd = j;
                             break;
                         }
@@ -265,8 +287,10 @@ namespace CALIBERDamageOverhaul
 
                     // determine if it's the only thing in the sentence within reason, check for "and or ,"
                     bool hasOtherListings = words.GetRange(dmgIdx[i], dmgIdx[i] + 2 < words.Count ? 2 : dmgIdx[i] + 1 < words.Count ? 1 : 0).Any(str => str == "and" || str == "or" || str.Contains(','));
-                    if (hasOtherListings) { // remove damage part
-                        if (dmgIdx[i] + 1 < words.Count) {
+                    if (hasOtherListings)
+                    { // remove damage part
+                        if (dmgIdx[i] + 1 < words.Count)
+                        {
                             if (words[dmgIdx[i] + 1] == "and") // remove following and
                                 words.RemoveAt(dmgIdx[i] + 1);
 
@@ -274,13 +298,18 @@ namespace CALIBERDamageOverhaul
                                 words[dmgIdx[i] + 1] = words[dmgIdx[i] + 1].Remove(0, 1);
                         }
                         words.RemoveAt(dmgIdx[i]);
-                    } else { // remove whole sentence
+                    }
+                    else
+                    { // remove whole sentence
                         words.RemoveRange(sentenceBegin, sentenceEnd - sentenceBegin + 1);
                     }
                 }
-            } else {
+            }
+            else
+            {
                 // replace entries with "recoil mitigation"
-                for (int i = dmgIdx.Count - 1; i >= 0; i--) {
+                for (int i = dmgIdx.Count - 1; i >= 0; i--)
+                {
                     words[dmgIdx[i]] = words[dmgIdx[i]].Replace("damage", "recoil mitigation").Replace("Damage", "Recoil mitigation");
                 }
             }
@@ -296,7 +325,8 @@ namespace CALIBERDamageOverhaul
             bool isAmmoType = false;
             bool isRechamber = false;
             List<int> dmgMultIdx = new();
-            for (int i = 0; i < weaponModGetter.Properties.Count; i++) {
+            for (int i = 0; i < weaponModGetter.Properties.Count; i++)
+            {
                 if (weaponModGetter.Properties[i].Property == Weapon.Property.Ammo)
                     isRechamber = true;
 
@@ -323,8 +353,10 @@ namespace CALIBERDamageOverhaul
 
             dmgMultIdx.Reverse();
             WeaponModification weaponModSetter = (state.PatchMod.ObjectModifications.GetOrAddAsOverride(objModGetter) as WeaponModification)!;
-            foreach(var idx in dmgMultIdx) {
-                if(isRechamber) {
+            foreach (var idx in dmgMultIdx)
+            {
+                if (isRechamber)
+                {
                     weaponModSetter.Properties.RemoveAt(idx);
                     continue;
                 }
@@ -338,26 +370,30 @@ namespace CALIBERDamageOverhaul
                     floatProp.Value = -floatProp.Value;
             }
 
-            if(weaponModSetter.Description is not null)
+            if (weaponModSetter.Description is not null)
                 weaponModSetter.Description = GetModifiedDescription(weaponModSetter.Description!, isRechamber);
         }
 
         public static IObjectPropertyGetter GetAV(INpcGetter npcGetter, IFormLink<IActorValueInformationGetter> actorValue)
         {
-            try {
+            try
+            {
                 return npcGetter.Properties.EmptyIfNull().First(prop => prop.ActorValue.Equals(actorValue));
             }
-            catch {
+            catch
+            {
                 return new ObjectProperty() { ActorValue = actorValue, Value = 0.0f };
             }
         }
 
         public static IObjectPropertyGetter GetAV(IRaceGetter raceGetter, IFormLink<IActorValueInformationGetter> actorValue)
         {
-            try {
+            try
+            {
                 return raceGetter.Properties.EmptyIfNull().First(prop => prop.ActorValue.Equals(actorValue));
             }
-            catch {
+            catch
+            {
                 return new ObjectProperty() { ActorValue = actorValue, Value = 0.0f };
             }
         }
@@ -394,6 +430,12 @@ namespace CALIBERDamageOverhaul
             WeaponTypeEnergy.FormVersion = 131;
             WeaponTypeEnergy.Type = Keyword.TypeEnum.None;
 
+            // Create caliber modified keyword (this keyword is added to all modified weapons to identify them) - Empyrean 23/11/2025
+            Console.WriteLine("Creating caliber modified keyword.");
+            var caliberModifiedKeyword = state.PatchMod.Keywords.AddNew("caliber_modified");
+            caliberModifiedKeyword.FormVersion = 131;
+            caliberModifiedKeyword.Type = Keyword.TypeEnum.None;
+
             Console.WriteLine("Applying custom ammo damage values.");
             foreach (var ammoEntry in Settings.AmmoEntries)
             {
@@ -407,9 +449,11 @@ namespace CALIBERDamageOverhaul
                 ammoSetter.Damage = ammoEntry.AmmoDamage;
             }
 
-            if (RacesToProcess.Any()) {
+            if (RacesToProcess.Any())
+            {
                 Console.WriteLine("Calculating racial health values.");
-                foreach (var npcGetter in state.LoadOrder.PriorityOrder.WinningOverrides<INpcGetter>()) {
+                foreach (var npcGetter in state.LoadOrder.PriorityOrder.WinningOverrides<INpcGetter>())
+                {
                     if (npcGetter.Equals(Fallout4.Npc.Player) || npcGetter.UseTemplateActors.HasFlag(Npc.TemplateActorType.Stats))
                         continue;
 
@@ -453,17 +497,28 @@ namespace CALIBERDamageOverhaul
             }
 
             Console.WriteLine("Applying weapon settings.");
-            foreach (var weaponGetter in state.LoadOrder.PriorityOrder.WinningOverrides<IWeaponGetter>()) {
+            foreach (var weaponGetter in state.LoadOrder.PriorityOrder.WinningOverrides<IWeaponGetter>())
+            {
                 bool isPlayable = !weaponGetter.Fallout4MajorRecordFlags.HasFlag(Fallout4MajorRecord.Fallout4MajorRecordFlag.NotPlayable);
                 bool isBallistic = weaponGetter.HasKeyword(Fallout4.Keyword.WeaponTypeBallistic) || weaponGetter.HasKeyword(Fallout4.Keyword.modskill_Guns);
                 bool isEnergy = weaponGetter.HasKeyword(Fallout4.Keyword.WeaponTypeLaser) || weaponGetter.HasKeyword(Fallout4.Keyword.WeaponTypePlasma) ||
                     weaponGetter.HasKeyword(Fallout4.Keyword.WeaponTypeGammaGun) || weaponGetter.HasKeyword(Fallout4.Keyword.modskill_EnergyGuns);
 
-                if (isBallistic) {
-                    if (!weaponGetter.Ammo.TryResolve(state.LinkCache, out var ammoGetter) || ammoGetter.Damage <= 1)
-                        continue;
- 
-                    foreach(var weapKeyword in weaponGetter.Keywords.EmptyIfNull())
+                if (isBallistic)
+                {
+                    // Try resolve ammo just for information — do not skip weapon if ammo missing or low.
+                    weaponGetter.Ammo.TryResolve(state.LinkCache, out var ammoGetter);
+                    if (ammoGetter is null)
+                    {
+                        Console.WriteLine($"Ballistic weapon {weaponGetter.FormKey} ({weaponGetter.EditorID}) — ammo not resolved: {weaponGetter.Ammo}");
+                    }
+                    else if (ammoGetter.Damage <= 1)
+                    {
+                        Console.WriteLine($"Ballistic weapon {weaponGetter.FormKey} ({weaponGetter.EditorID}) — ammo {ammoGetter.FormKey} has Damage={ammoGetter.Damage}");
+                    }
+
+                    // collect mod-association keywords like before
+                    foreach (var weapKeyword in weaponGetter.Keywords.EmptyIfNull())
                     {
                         if (!weapKeyword.TryResolve(state.LinkCache, out var keywordGetter))
                             continue;
@@ -475,17 +530,33 @@ namespace CALIBERDamageOverhaul
                             BallisticModKeywords.Add(weapKeyword);
                     }
 
+                    // Always apply the weapon BaseDamage reduction for ballistic weapons(even if their ammo isn't patched) - Empyrean 23/11/2025
                     var weaponSetter = state.PatchMod.Weapons.GetOrAddAsOverride(weaponGetter);
                     weaponSetter.BaseDamage = (ushort)Math.Ceiling(weaponSetter.BaseDamage * 0.1f);
+
+                    // test: define a name to weapons(going to be used in a future mod) - Empyrean 23/11/2025
+                    //weaponSetter.Name = "TESTE DE NOME";
+
+                    // Add the keyword (caliber_modified) to identify modified weapons - Empyrean 23/11/2025
+                    weaponSetter.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
+                    if (!weaponSetter.Keywords.Contains(caliberModifiedKeyword))
+                        weaponSetter.Keywords.Add(caliberModifiedKeyword);
                 }
-                else if (isEnergy) {
+                else if (isEnergy)
+                {
                     var weaponSetter = state.PatchMod.Weapons.GetOrAddAsOverride(weaponGetter);
                     weaponSetter.Keywords?.Add(WeaponTypeEnergy);
+
+                    // Add the keyword (caliber_modified) to identify modified weapons - Empyrean 23/11/2025
+                    weaponSetter.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
+                    if (!weaponSetter.Keywords.Contains(caliberModifiedKeyword))
+                        weaponSetter.Keywords.Add(caliberModifiedKeyword);
                 }
             }
 
             Console.WriteLine("Modifying weapon attachments.");
-            foreach(var objModGetter in state.LoadOrder.PriorityOrder.WinningOverrides<IAObjectModificationGetter>()) {
+            foreach (var objModGetter in state.LoadOrder.PriorityOrder.WinningOverrides<IAObjectModificationGetter>())
+            {
                 if (objModGetter is not IWeaponModificationGetter weaponModGetter)
                     continue;
 
